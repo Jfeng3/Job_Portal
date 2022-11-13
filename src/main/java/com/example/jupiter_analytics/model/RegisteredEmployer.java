@@ -23,7 +23,7 @@ public class RegisteredEmployer {
 
     private Long contactNumber;
 
-    private String officialEmail;
+    private String email;
 
     private String companyName;
 

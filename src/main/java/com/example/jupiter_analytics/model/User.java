@@ -18,8 +18,8 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String username;
     private String password;
+    private String email;
     private String status;
     private String lastLogin;
     private String token;
