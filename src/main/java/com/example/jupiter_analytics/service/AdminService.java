@@ -1,7 +1,8 @@
 package com.example.jupiter_analytics.service;
 
 import com.example.jupiter_analytics.model.RegisteredEmployer;
-import com.example.jupiter_analytics.model.User;
+import com.example.jupiter_analytics.model.LoginUser;
+
 
 public interface AdminService {
 
@@ -10,5 +11,5 @@ public interface AdminService {
 
     // you first start with an registered employer, after the onboarding ,
     // you create user and send credentials
-    User onboardingEmployer(RegisteredEmployer employer);
+    LoginUser onboardingEmployer(RegisteredEmployer employer);
 }

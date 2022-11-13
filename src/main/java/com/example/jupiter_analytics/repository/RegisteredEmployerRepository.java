@@ -3,7 +3,9 @@ package com.example.jupiter_analytics.repository;
 import com.example.jupiter_analytics.model.RegisteredEmployer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface RegisteredEmployerRepository extends JpaRepository<RegisteredEmployer, Long> {
 
     @Query("SELECT r FROM RegisteredEmployer r WHERE r.email = ?1")
